@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LogIn Firebase</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.6.0/firebase.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAk20sYKWlhEoY7PKDr0ufite6D8EJ4m_Y",
+        authDomain: "public-d576e.firebaseapp.com",
+        databaseURL: "https://public-d576e.firebaseio.com",
+        projectId: "public-d576e",
+        storageBucket: "",
+        messagingSenderId: "454793442048",
+        appId: "1:454793442048:web:32ee10a55c12017f"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+
+</head>
+<body>
+    <!--The profile section-->
+    <!-- <section class="hide" id="profile">
+        <h1>Your Profile</h1>
+        
+        <article>
+            <div>
+                <img id="photo" src="http://marketline.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" alt="">                
+                <button id="logout">LogOut</button>
+            </div>
+            <div>
+                <input type="text" id="phone" placeholder="+5211234567890" disabled>
+                <input type="text" id="useremail" placeholder="mail@mail.com" disabled>
+                <input type="text" id="username" placeholder="username" disabled>
+                <input type="text" id="name" placeholder="name">        
+                <input type="text" id="bio" placeholder="A little bio">
+                <button id="editar">Editar</button>
+            </div>
+            
+        </article>
+    </section> -->
+    <!--The Login section-->
+    <section class="show" id="login">
+        <!-- <p id="error"></p> -->
+        <article>                
+            <div>
+                <h2>Login</h2>
+                
+                <h5>Correo/contraseña</h5>
+                
+                <input type="email" id="email" placeholder="email@firebasemx.com">
+                <input type="password" id="password" placeholder="password">
+                <button id="register">Registrar</button>
+                <br/>
+                    <a href="#" id="iniciar-sesion">Iniciar Sesion</a>                
+                <h5>Redes sociales</h5>
+                <button class="facebook" id="facebook">Facebook</button>
+                <button class="google" id="google">Google</button>
+                <button class="twitter" id="twitter">Twitter</button>
+                <button class="github" id="github">Github</button>
+            </div>    
+        </article>
+
+    </section>
+<section class="hide" id="ingresar">
+    <article>
+        <div>   
+             <h6>Iniciar sesión</h6>
+             <input type="email" id="email2" placeholder="email@firebasemx.com">
+             <input type="password" id="password2" placeholder="password">
+             <button id="emailLogin">Iniciar sesión</button>
+        </div>
+    </article>
+</section>
+
+<section class="hide" id="send-code">
+    <article>
+            <div>
+                <h2>Enviar código</h2>
+                <input type="text" id="number" placeholder="phone number" value="">
+                <button class="number" id="numberButton">Enviar</button>
+                <p id="recaptcha-container"></p>
+            </div>
+    </article>
+</section>
+<section class="hide" id="valid-code">
+    <article>
+            <div>
+                <h2>Validar código</h2>                
+                <input type="text" id="code" placeholder="code">
+                <button class="validatebtn" id="validate">Validar</button>
+            </div>
+    </article>
+</section>
+<section class="hide" id="bienvenido">
+    <article>
+        <div>
+            <h2>Bienvenido broh!</h2>
+        </div>
+    </article>
+</section>
+</body>
+<script src="app.js"></script>
+</html>
